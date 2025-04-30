@@ -209,6 +209,11 @@ footer a {
 @media screen and (min-width: 769px), print {
     
     /* Desktop Viewport: Style rule for header */
+.galaxycode {
+	width: 100%;
+    	height: 200px;
+}
+	
     header {
         padding: 2%;
     }
