@@ -1,0 +1,499 @@
+/*
+Author: Katelyn Bellamy
+Date: 2/3/2025
+File Name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rule for images */
+img {
+    max-width: 100%;
+}
+
+
+/* Style rules for mobile viewport */
+
+/* show mobile class, hide tablet-desktop class and menu-links id  */
+.mobile-nav  #menu-links {
+	display: block;
+}
+
+.tablet-desktop, #menu-links {
+	display: none;
+}
+
+/* Style rules for header content */
+header {
+    text-align: center;
+    font-size: 1.5em;
+    color: #71a0c3;
+}
+
+header h1 {
+    font-family: 'DM Serif Display', serif;
+    font-style: italic;
+}
+
+	.center {
+		transform: rotate(35deg);
+		height: 100px;
+		width: 100px;
+		display: inline;
+	}
+	
+	.video {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.name {
+		color: #fff;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+}
+
+	.video-wrapper {
+		position: relative;
+		width: 100%;
+		height: 200px;
+		overflow: hidden;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+}
+
+/* Style rules for hamburger menu */
+
+.mobile-nav a {
+	color: #fff;
+	font-family: 'DM Serif Display', serif;
+	text-align: center;
+	font-size: 2em;
+	text-decoration: none;
+	padding: 3%;
+	display: block;
+}
+
+.mobile-nav a.menu-icon {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+	display: inline-block;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 2em;
+    border-top: 1px solid #deecf6;
+}
+
+nav li a {
+    display: inline;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+/* Style rules for main content */
+main {
+    padding: 2%;
+    background-color: #deecf6;
+    overflow: auto;
+    font-family: 'DM Serif Display', serif;
+}
+
+main p {
+    font-size: 1.25em;
+}
+
+article {
+	padding: 2%;
+}
+
+#info {
+    clear: left;
+    background-color: #c0caf7;
+    padding: 1% 2%;
+}
+
+#contact {
+    text-align: center;
+}
+
+#contact .email-link {
+    color: #4645a8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+/* Style rules for footer content */
+footer {
+    text-align: center;
+    font-size: 0.65em;
+    clear: left;
+}
+
+footer a {
+    color: #4645a8;
+    text-decoration: none;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 550px), print {
+  
+/* Tablet Viewport: Show tablet-desktop class, hide mobile class */
+
+	.tablet-desktop {
+		display: block;
+	}
+	
+	.mobile, .mobile-nav {
+		display: none;
+	}
+	
+    /* Tablet Viewport: Style rule for header content */
+    
+	.center {
+		transform: rotate(35deg);
+		height: 100px;
+		width: 100px;
+		display: inline;
+	}
+	
+    /* Tablet Viewport: Style rules for nav area */
+	
+	nav {
+		padding: 1%;
+		margin-bottom: 1%;
+	}
+	
+    nav li {
+        border-top: none;
+        display: inline;
+        border-right: 1px solid #deecf6;
+        font-size: 1.5em;
+    }
+    
+    nav li:last-child {
+        border-right: none;
+    }
+    
+    nav li a {
+        padding: 0.25em 0.5em;
+		font-size: 1.5em;
+    }
+
+}
+   
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 769px), print {
+    
+    /* Desktop Viewport: Style rule for header */
+    header {
+        padding: 2%;
+    }
+	
+	.video {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	
+	.video-wrapper {
+		position: relative;
+		width: 100%;
+		height: 200px;
+		overflow: hidden;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.name {
+		color: #fff;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+	
+    /* Desktop Viewport: Style rules for nav area */
+	
+	nav {	
+		background: #71a0c3;
+		text-align: center;
+		width: 100%;
+		margin: 0em 0em 0 0;
+	}
+
+    nav li a {
+        padding: 0.5em 1em;
+		display: inline;
+		color: #fff;
+		text-align: center;
+		text-decoration: none;
+		font-size: 1.5em;
+    }
+    
+    nav li a:hover {
+        color: #71a0c3;
+        background-color: #deecf6;
+    }
+
+	nav ul {
+		list-style-type: none;
+		text-align: center;
+		display: inline;
+}
+	#icon {
+		max-width: 50%;
+		display: block;
+	}
+
+    .mobile, mobile-nav {
+        display: none;
+    }
+  
+    /* Desktop Viewport: Style Rules for main content */  
+    #info ul {
+        margin-left: 5%;
+    }
+
+    main h3 {
+        font-size: 1.5em;
+    }
+	
+	.savvy {
+		font-size: .9em;
+		border: 2px solid #deecf6;
+		text-align: center;
+		padding: 2%;
+	}
+	
+	.think {
+		font-size: .9em;
+		border: 2px solid #deecf6;
+		text-align: center;
+		padding: 2%;
+	}
+	
+	.manage {
+		font-size: .9em;
+		border: 2px solid #deecf6;
+		text-align: center;
+		padding: 2%;
+	}
+	
+	.adapt {
+		font-size: .9em;
+		border: 2px solid #deecf6;
+		text-align: center;
+		padding: 2%;
+	}
+	
+	.edu {
+		font-size: 2em;
+	}
+	
+	.skills {
+		font-size: 2em;
+		padding: 2%;
+	}
+	
+	.stuff {
+    display: flex;
+	padding: 2%;
+}
+
+	.com {
+		height:200px;
+		width:220px;
+		flex: 1 100px; 
+		border-radius: 70%;
+		object-fit: cover;
+		box-shadow: 8px 8px 8px #71a0c3;
+	}
+	
+	.crit {
+		height:200px;
+		width:220px;
+		flex: 1 100px; 
+		border-radius: 70%;
+		object-fit: cover;
+		box-shadow: 8px 8px 8px #71a0c3;
+	}
+	
+	.time {
+		height:200px;
+		width:220px;
+		flex: 1 100px; 
+		border-radius: 70%;
+		object-fit: cover;
+	}
+	
+	.change {
+		height:200px;
+		width:220px;
+		flex: 1 100px; 
+
+	}
+	
+	.education {
+		display: flex;
+		padding: 2%;
+	}
+	
+	.WFHS {
+		height:300px;
+		width:320px;
+		flex: 1 100px; 
+	}
+	
+	.FDTC {
+		height:300px; 
+		width:460px;
+		flex: 1 100px; 
+	}
+	
+	#div1 {
+		border: 2px solid #71a0c3;
+	}
+	
+	#div2 {
+		border: 2px solid #71a0c3;
+	}
+	
+	
+	@media (max-width: 600px) {
+	.education {
+		flex-direction: column;
+	}
+	
+	.stuff {
+		flex-direction: column;
+	}
+}
+	.link {
+		background-color: #71a0c3;
+		padding: 2%;
+        margin: 0em 0em 0 0;
+		width: 80%;
+		text-align: center;
+		border-radius: 5px;
+		color: #fff;
+	}
+	
+		
+   	.me {
+	display: flex;
+	background: linear-gradient(to bottom, #71a0c3, #deecf6);
+	}
+
+	.code {
+		display: block;
+		float: right;
+		box-shadow: 8px 8px 8px #000;
+		height: 150px;
+		width: 240px;
+		transform: skewX(10deg);
+		margin: 1em 1em 0 0;
+	}
+	
+	.laptop {
+		display: block;
+		box-shadow: 8px 8px 8px #000;
+		height: 150px;
+		width: 200px;
+		float:left;
+	}
+		
+	.games {
+		box-shadow: 8px 8px 8px #000;
+		height:200px; 
+		flex: 1 100px; 
+	}
+	
+	.animals {
+		box-shadow: 8px 8px 8px #000;
+		height:200px; 
+		flex: 1 100px;
+	}
+	
+	.spanish {
+		height: 200px; 
+		flex: 1 100px;
+		box-shadow: 8px 8px 8px #000;
+	}
+	
+	.edit {
+		height: 200px; 
+		flex: 1 100px;
+		box-shadow: 8px 8px 8px #000;
+	}
+	
+	.school {
+		text-align:center;
+	}
+	
+	.pro {
+		text-align: center;
+		margin: 0em 0em 0 0;
+		float: left;
+	}
+	
+	.af {
+		text-align: center;
+		margin: 0em 0em 0 0;
+		float: right;
+	}	
+	
+	@media (max-width: 600px) {
+	.me {
+		flex-direction: column;
+		height: 500px;
+	}
+}
+	.home {
+		text-align: center;
+		margin: 0em 0em 0 0;
+	}	
+
+	/* Style rules for footer content */
+	.social {
+		display: block;
+		height: 20px;
+		width: 20px;
+		margin: auto;
+	}
+	
+/* Media Query for Print */
+@media print {
+    
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+    
+}
